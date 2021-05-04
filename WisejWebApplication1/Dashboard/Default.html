@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AFIT Cooperative | Dashboard</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;IE=11" />
+    <script src="wisej.wx"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet" />
+    <style>
+        #splash {
+            position: absolute;
+            background: url("../Resources/AFITlogo-1.gif");
+            background-position: center center;
+            background-size: 175px 175px;
+            background-repeat: no-repeat;
+            background-color: #0B5DAB;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 2s;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body style="padding: 0px; margin: 0px">
+    <div id="splash"></div>
+    <script>
+        Wisej.onLoad = function () {
+            var splash = document.getElementById("splash");
+            splash.parentNode.removeChild(splash);
+        }
+    </script>
+</body>
+</html>
