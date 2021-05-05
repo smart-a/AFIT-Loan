@@ -279,7 +279,7 @@ namespace WisejWebApplication1.Dashboard
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ForeColor = System.Drawing.Color.FromArgb(218, 165, 32);
+            this.pictureBox1.ForeColor = System.Drawing.Color.Goldenrod;
             this.pictureBox1.ImageSource = "Resources\\wallet-solid.svg";
             this.pictureBox1.Location = new System.Drawing.Point(166, 14);
             this.pictureBox1.Name = "pictureBox1";
@@ -363,7 +363,7 @@ namespace WisejWebApplication1.Dashboard
             // 
             // pictureBox3
             // 
-            this.pictureBox3.ForeColor = System.Drawing.Color.Goldenrod;
+            this.pictureBox3.ForeColor = System.Drawing.Color.FromArgb(218, 165, 32);
             this.pictureBox3.ImageSource = "resource.wx/Wisej.Ext.ModernUI/appbar.money.svg";
             this.pictureBox3.Location = new System.Drawing.Point(166, 14);
             this.pictureBox3.Name = "pictureBox3";
