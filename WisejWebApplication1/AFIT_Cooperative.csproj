@@ -100,6 +100,7 @@
       <DependentUpon>DefaultHeader.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\HelperMethods.cs" />
+    <Compile Include="Middleware\Auth.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System.Text;
 using AFIT_Cooperative.Models;
-using Newtonsoft.Json;
 
 namespace AFIT_Cooperative.Helper
 {
