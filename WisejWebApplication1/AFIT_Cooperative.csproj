@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WisejWebApplication1</RootNamespace>
-    <AssemblyName>WisejWebApplication1</AssemblyName>
+    <RootNamespace>AFIT_Cooperative</RootNamespace>
+    <AssemblyName>AFIT_Cooperative</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -44,11 +45,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Admin\Dashboard\Default.html" />
+    <Content Include="Admin\Default.html" />
     <Content Include="Dashboard\Default.html" />
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
     <Content Include="Dashboard\Default.json" />
+    <Content Include="Admin\Default.json" />
+    <Content Include="Admin\Dashboard\Default.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\Settings.settings">
@@ -74,11 +79,71 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard\Dashboard.cs">
+    <Compile Include="Admin\AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Admin\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanHistory.Designer.cs">
+      <DependentUpon>LoanHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanApplications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanApplications.Designer.cs">
+      <DependentUpon>LoanApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\LoanDetails.Designer.cs">
+      <DependentUpon>LoanDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\PaymentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\PaymentsControl.Designer.cs">
+      <DependentUpon>PaymentsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\ApplyLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ApplyLoan.Designer.cs">
+      <DependentUpon>ApplyLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MyLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MyLoan.Designer.cs">
+      <DependentUpon>MyLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\PayLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PayLoan.Designer.cs">
+      <DependentUpon>PayLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\FundWallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\FundWallet.Designer.cs">
+      <DependentUpon>FundWallet.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Index.cs">
       <SubType>UserControl</SubType>
@@ -100,8 +165,12 @@
       <DependentUpon>DefaultHeader.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\HelperMethods.cs" />
-    <Compile Include="Middleware\Auth.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Loan.cs" />
+    <Compile Include="Models\LoanPaymentHistory.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\PaymentHistory.cs" />
+    <Compile Include="Models\UsersAccount.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,8 +245,38 @@
     <Reference Include="Wisej.Web.Ext.Notification, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dashboard\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\LoanHistory.resx">
+      <DependentUpon>LoanHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\LoanApplications.resx">
+      <DependentUpon>LoanApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\LoanDetails.resx">
+      <DependentUpon>LoanDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\PaymentsControl.resx">
+      <DependentUpon>PaymentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\ApplyLoan.resx">
+      <DependentUpon>ApplyLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MyLoan.resx">
+      <DependentUpon>MyLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\PayLoan.resx">
+      <DependentUpon>PayLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\FundWallet.resx">
+      <DependentUpon>FundWallet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

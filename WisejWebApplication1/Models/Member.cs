@@ -10,7 +10,7 @@ namespace AFIT_Cooperative.Models
     {
         public Member()
         {
-            Id = new Guid();
+            Id = Guid.NewGuid();
         }
 
         public Guid Id { set; get; }

@@ -54,6 +54,10 @@ namespace AFIT_Cooperative.Registration
 
                 _context.Members.Add(_member);
                 await _context.SaveChangesAsync();
+
+                _context.Accounts.Add(new Account { Member = _member });
+                await _context.SaveChangesAsync();
+
                 MessageBox.Show("Registration successful\nClick OK to login to your account");
                 Application.Navigate("/");
             }

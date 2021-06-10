@@ -1,5 +1,5 @@
 ﻿
-namespace WisejWebApplication1.Dashboard
+namespace AFIT_Cooperative.Dashboard
 {
     partial class Index
     {
@@ -29,40 +29,27 @@ namespace WisejWebApplication1.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.bindingNavigator1 = new Wisej.Web.BindingNavigator(this.components);
-            this.buttonAddNew = new Wisej.Web.Button();
-            this.buttonMoveFirst = new Wisej.Web.Button();
-            this.buttonMovePrevious = new Wisej.Web.Button();
-            this.separatorLeft = new Wisej.Web.Line();
-            this.textBoxPosition = new Wisej.Web.TextBox();
-            this.labelCount = new Wisej.Web.Label();
-            this.separatorRight = new Wisej.Web.Line();
-            this.buttonMoveNext = new Wisej.Web.Button();
-            this.buttonMoveLast = new Wisej.Web.Button();
-            this.separatorControl = new Wisej.Web.Line();
-            this.buttonDelete = new Wisej.Web.Button();
             this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
             this.panel4 = new Wisej.Web.Panel();
             this.panel5 = new Wisej.Web.Panel();
+            this.btnApply = new Wisej.Web.Button();
+            this.btnPayNow = new Wisej.Web.Button();
             this.label7 = new Wisej.Web.Label();
             this.dataGridView1 = new Wisej.Web.DataGridView();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.panel1 = new Wisej.Web.Panel();
             this.pictureBox1 = new Wisej.Web.PictureBox();
             this.label2 = new Wisej.Web.Label();
-            this.label1 = new Wisej.Web.Label();
+            this.lblWallet = new Wisej.Web.Label();
             this.panel2 = new Wisej.Web.Panel();
+            this.btnStatusIndicator = new Wisej.Web.Button();
             this.pictureBox2 = new Wisej.Web.PictureBox();
             this.label3 = new Wisej.Web.Label();
-            this.label4 = new Wisej.Web.Label();
+            this.lblLoanAmount = new Wisej.Web.Label();
             this.panel3 = new Wisej.Web.Panel();
             this.pictureBox3 = new Wisej.Web.PictureBox();
             this.label5 = new Wisej.Web.Label();
-            this.label6 = new Wisej.Web.Label();
-            this.bindingSource1 = new Wisej.Web.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            this.lblLoanBalance = new Wisej.Web.Label();
             this.flexLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -74,126 +61,7 @@ namespace WisejWebApplication1.Dashboard
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = this.buttonAddNew;
-            this.bindingNavigator1.Controls.Add(this.buttonMoveFirst);
-            this.bindingNavigator1.Controls.Add(this.buttonMovePrevious);
-            this.bindingNavigator1.Controls.Add(this.separatorLeft);
-            this.bindingNavigator1.Controls.Add(this.textBoxPosition);
-            this.bindingNavigator1.Controls.Add(this.labelCount);
-            this.bindingNavigator1.Controls.Add(this.separatorRight);
-            this.bindingNavigator1.Controls.Add(this.buttonMoveNext);
-            this.bindingNavigator1.Controls.Add(this.buttonMoveLast);
-            this.bindingNavigator1.Controls.Add(this.separatorControl);
-            this.bindingNavigator1.Controls.Add(this.buttonAddNew);
-            this.bindingNavigator1.Controls.Add(this.buttonDelete);
-            this.bindingNavigator1.CountItem = this.labelCount;
-            this.bindingNavigator1.DeleteItem = this.buttonDelete;
-            this.bindingNavigator1.Dock = Wisej.Web.DockStyle.Bottom;
-            this.bindingNavigator1.Location = new System.Drawing.Point(8, 476);
-            this.bindingNavigator1.MoveFirstItem = this.buttonMoveFirst;
-            this.bindingNavigator1.MoveLastItem = this.buttonMoveLast;
-            this.bindingNavigator1.MoveNextItem = this.buttonMoveNext;
-            this.bindingNavigator1.MovePreviousItem = this.buttonMovePrevious;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.textBoxPosition;
-            this.bindingNavigator1.Size = new System.Drawing.Size(798, 49);
-            this.bindingNavigator1.TabIndex = 0;
-            // 
-            // buttonAddNew
-            // 
-            this.buttonAddNew.ImageSource = "table-row-new";
-            this.buttonAddNew.Location = new System.Drawing.Point(336, 3);
-            this.buttonAddNew.Name = "buttonAddNew";
-            this.buttonAddNew.Size = new System.Drawing.Size(37, 28);
-            this.buttonAddNew.TabIndex = 4;
-            // 
-            // buttonMoveFirst
-            // 
-            this.buttonMoveFirst.ImageSource = "icon-first";
-            this.buttonMoveFirst.Location = new System.Drawing.Point(3, 3);
-            this.buttonMoveFirst.Name = "buttonMoveFirst";
-            this.buttonMoveFirst.Size = new System.Drawing.Size(37, 28);
-            this.buttonMoveFirst.TabIndex = 0;
-            // 
-            // buttonMovePrevious
-            // 
-            this.buttonMovePrevious.ImageSource = "icon-left";
-            this.buttonMovePrevious.Location = new System.Drawing.Point(46, 3);
-            this.buttonMovePrevious.Name = "buttonMovePrevious";
-            this.buttonMovePrevious.Size = new System.Drawing.Size(37, 28);
-            this.buttonMovePrevious.TabIndex = 1;
-            // 
-            // separatorLeft
-            // 
-            this.separatorLeft.Location = new System.Drawing.Point(89, 3);
-            this.separatorLeft.Name = "separatorLeft";
-            this.separatorLeft.Orientation = Wisej.Web.Orientation.Vertical;
-            this.separatorLeft.Padding = new Wisej.Web.Padding(0, 5, 0, 5);
-            this.separatorLeft.Size = new System.Drawing.Size(14, 28);
-            // 
-            // textBoxPosition
-            // 
-            this.textBoxPosition.AutoSize = false;
-            this.textBoxPosition.LabelText = null;
-            this.textBoxPosition.Location = new System.Drawing.Point(109, 3);
-            this.textBoxPosition.Name = "textBoxPosition";
-            this.textBoxPosition.Size = new System.Drawing.Size(50, 28);
-            this.textBoxPosition.TabIndex = 6;
-            this.textBoxPosition.Text = "0";
-            // 
-            // labelCount
-            // 
-            this.labelCount.Location = new System.Drawing.Point(165, 3);
-            this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(39, 28);
-            this.labelCount.TabIndex = 7;
-            this.labelCount.Text = "of {0}";
-            this.labelCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // separatorRight
-            // 
-            this.separatorRight.Location = new System.Drawing.Point(210, 3);
-            this.separatorRight.Name = "separatorRight";
-            this.separatorRight.Orientation = Wisej.Web.Orientation.Vertical;
-            this.separatorRight.Padding = new Wisej.Web.Padding(0, 5, 0, 5);
-            this.separatorRight.Size = new System.Drawing.Size(14, 28);
-            // 
-            // buttonMoveNext
-            // 
-            this.buttonMoveNext.ImageSource = "icon-right";
-            this.buttonMoveNext.Location = new System.Drawing.Point(230, 3);
-            this.buttonMoveNext.Name = "buttonMoveNext";
-            this.buttonMoveNext.Size = new System.Drawing.Size(37, 28);
-            this.buttonMoveNext.TabIndex = 2;
-            // 
-            // buttonMoveLast
-            // 
-            this.buttonMoveLast.ImageSource = "icon-last";
-            this.buttonMoveLast.Location = new System.Drawing.Point(273, 3);
-            this.buttonMoveLast.Name = "buttonMoveLast";
-            this.buttonMoveLast.Size = new System.Drawing.Size(37, 28);
-            this.buttonMoveLast.TabIndex = 3;
-            // 
-            // separatorControl
-            // 
-            this.separatorControl.Location = new System.Drawing.Point(316, 3);
-            this.separatorControl.Name = "separatorControl";
-            this.separatorControl.Orientation = Wisej.Web.Orientation.Vertical;
-            this.separatorControl.Padding = new Wisej.Web.Padding(0, 5, 0, 5);
-            this.separatorControl.Size = new System.Drawing.Size(14, 28);
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.ImageSource = "icon-close";
-            this.buttonDelete.Location = new System.Drawing.Point(379, 3);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(37, 28);
-            this.buttonDelete.TabIndex = 5;
             // 
             // flexLayoutPanel1
             // 
@@ -206,22 +74,26 @@ namespace WisejWebApplication1.Dashboard
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
             this.flexLayoutPanel1.Size = new System.Drawing.Size(1000, 809);
             this.flexLayoutPanel1.TabIndex = 1;
+            this.flexLayoutPanel1.TabStop = true;
             // 
             // panel4
             // 
+            this.panel4.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Dock = Wisej.Web.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 211);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1000, 577);
             this.panel4.TabIndex = 1;
+            this.panel4.TabStop = true;
             // 
             // panel5
             // 
+            this.panel5.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.panel5.Controls.Add(this.btnApply);
+            this.panel5.Controls.Add(this.btnPayNow);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Controls.Add(this.bindingNavigator1);
             this.panel5.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel5.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel5.HeaderBackColor = System.Drawing.Color.FromArgb(255, 255, 255);
@@ -232,13 +104,46 @@ namespace WisejWebApplication1.Dashboard
             this.panel5.ShowCloseButton = false;
             this.panel5.Size = new System.Drawing.Size(814, 533);
             this.panel5.TabIndex = 2;
+            this.panel5.TabStop = true;
+            // 
+            // btnApply
+            // 
+            this.btnApply.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.btnApply.Focusable = false;
+            this.btnApply.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnApply.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/check-square-o.svg";
+            this.btnApply.Location = new System.Drawing.Point(542, 23);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.Size = new System.Drawing.Size(129, 30);
+            this.btnApply.TabIndex = 10;
+            this.btnApply.Text = "Apply Loan";
+            this.btnApply.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
+            // 
+            // btnPayNow
+            // 
+            this.btnPayNow.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.btnPayNow.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.btnPayNow.Focusable = false;
+            this.btnPayNow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPayNow.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/paypal.svg";
+            this.btnPayNow.Location = new System.Drawing.Point(686, 23);
+            this.btnPayNow.Name = "btnPayNow";
+            this.btnPayNow.Size = new System.Drawing.Size(102, 30);
+            this.btnPayNow.TabIndex = 9;
+            this.btnPayNow.Text = "Pay Now";
+            this.btnPayNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 29);
+            this.label7.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label7.Location = new System.Drawing.Point(26, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 19);
+            this.label7.Size = new System.Drawing.Size(126, 23);
             this.label7.TabIndex = 1;
             this.label7.Text = "Loan Histroy";
             // 
@@ -246,7 +151,7 @@ namespace WisejWebApplication1.Dashboard
             // 
             this.dataGridView1.Location = new System.Drawing.Point(26, 65);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(762, 132);
+            this.dataGridView1.Size = new System.Drawing.Size(762, 457);
             this.dataGridView1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -261,13 +166,15 @@ namespace WisejWebApplication1.Dashboard
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(80, 50, 80, 20);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1000, 211);
             this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.TabStop = true;
             // 
             // panel1
             // 
+            this.panel1.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblWallet);
             this.panel1.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel1.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel1.Location = new System.Drawing.Point(83, 53);
@@ -276,6 +183,7 @@ namespace WisejWebApplication1.Dashboard
             this.panel1.Padding = new Wisej.Web.Padding(5);
             this.panel1.Size = new System.Drawing.Size(256, 123);
             this.panel1.TabIndex = 0;
+            this.panel1.TabStop = true;
             // 
             // pictureBox1
             // 
@@ -294,22 +202,26 @@ namespace WisejWebApplication1.Dashboard
             this.label2.TabIndex = 1;
             this.label2.Text = "<h2>My Savings</h2>";
             // 
-            // label1
+            // lblWallet
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(159, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "#2,500.00";
+            this.lblWallet.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblWallet.ForeColor = System.Drawing.Color.Green;
+            this.lblWallet.Location = new System.Drawing.Point(104, 86);
+            this.lblWallet.Name = "lblWallet";
+            this.lblWallet.RightToLeft = Wisej.Web.RightToLeft.Yes;
+            this.lblWallet.Size = new System.Drawing.Size(130, 19);
+            this.lblWallet.TabIndex = 0;
+            this.lblWallet.Text = "N0.00";
+            this.lblWallet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
             // 
+            this.panel2.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.panel2.Controls.Add(this.btnStatusIndicator);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblLoanAmount);
             this.panel2.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel2.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel2.Location = new System.Drawing.Point(362, 53);
@@ -318,6 +230,25 @@ namespace WisejWebApplication1.Dashboard
             this.panel2.Padding = new Wisej.Web.Padding(5);
             this.panel2.Size = new System.Drawing.Size(256, 123);
             this.panel2.TabIndex = 1;
+            this.panel2.TabStop = true;
+            // 
+            // btnStatusIndicator
+            // 
+            this.btnStatusIndicator.AutoSize = true;
+            this.btnStatusIndicator.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatusIndicator.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.btnStatusIndicator.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.btnStatusIndicator.Focusable = false;
+            this.btnStatusIndicator.Font = new System.Drawing.Font("default", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
+            this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
+            this.btnStatusIndicator.Location = new System.Drawing.Point(4, 92);
+            this.btnStatusIndicator.Name = "btnStatusIndicator";
+            this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
+            this.btnStatusIndicator.TabIndex = 3;
+            this.btnStatusIndicator.Text = "Active";
+            this.btnStatusIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
@@ -336,22 +267,25 @@ namespace WisejWebApplication1.Dashboard
             this.label3.TabIndex = 1;
             this.label3.Text = "<h2>My Loan</h2>";
             // 
-            // label4
+            // lblLoanAmount
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Green;
-            this.label4.Location = new System.Drawing.Point(159, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "#2,500.00";
+            this.lblLoanAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoanAmount.ForeColor = System.Drawing.Color.Green;
+            this.lblLoanAmount.Location = new System.Drawing.Point(127, 86);
+            this.lblLoanAmount.Name = "lblLoanAmount";
+            this.lblLoanAmount.RightToLeft = Wisej.Web.RightToLeft.Yes;
+            this.lblLoanAmount.Size = new System.Drawing.Size(107, 19);
+            this.lblLoanAmount.TabIndex = 0;
+            this.lblLoanAmount.Text = "N0.00";
+            this.lblLoanAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
+            this.panel3.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lblLoanBalance);
             this.panel3.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel3.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel3.Location = new System.Drawing.Point(641, 53);
@@ -360,6 +294,7 @@ namespace WisejWebApplication1.Dashboard
             this.panel3.Padding = new Wisej.Web.Padding(5);
             this.panel3.Size = new System.Drawing.Size(256, 123);
             this.panel3.TabIndex = 2;
+            this.panel3.TabStop = true;
             // 
             // pictureBox3
             // 
@@ -378,23 +313,25 @@ namespace WisejWebApplication1.Dashboard
             this.label5.TabIndex = 1;
             this.label5.Text = "<h2>My Balance</h2>";
             // 
-            // label6
+            // lblLoanBalance
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Green;
-            this.label6.Location = new System.Drawing.Point(159, 96);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 19);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "#2,500.00";
+            this.lblLoanBalance.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.lblLoanBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoanBalance.ForeColor = System.Drawing.Color.Green;
+            this.lblLoanBalance.Location = new System.Drawing.Point(128, 86);
+            this.lblLoanBalance.Name = "lblLoanBalance";
+            this.lblLoanBalance.RightToLeft = Wisej.Web.RightToLeft.Yes;
+            this.lblLoanBalance.Size = new System.Drawing.Size(106, 19);
+            this.lblLoanBalance.TabIndex = 0;
+            this.lblLoanBalance.Text = "N0.00";
+            this.lblLoanBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Index
             // 
             this.Controls.Add(this.flexLayoutPanel1);
             this.Name = "Index";
             this.Size = new System.Drawing.Size(1000, 809);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
+            this.Appear += new System.EventHandler(this.Index_Appear);
             this.flexLayoutPanel1.ResumeLayout(false);
             this.flexLayoutPanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -403,51 +340,37 @@ namespace WisejWebApplication1.Dashboard
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Wisej.Web.BindingNavigator bindingNavigator1;
-        private Wisej.Web.Button buttonAddNew;
-        private Wisej.Web.Button buttonMoveFirst;
-        private Wisej.Web.Button buttonMovePrevious;
-        private Wisej.Web.Line separatorLeft;
-        private Wisej.Web.TextBox textBoxPosition;
-        private Wisej.Web.Label labelCount;
-        private Wisej.Web.Line separatorRight;
-        private Wisej.Web.Button buttonMoveNext;
-        private Wisej.Web.Button buttonMoveLast;
-        private Wisej.Web.Line separatorControl;
-        private Wisej.Web.Button buttonDelete;
-        private Wisej.Web.BindingSource bindingSource1;
         private Wisej.Web.FlexLayoutPanel flexLayoutPanel1;
         private Wisej.Web.FlowLayoutPanel flowLayoutPanel1;
         private Wisej.Web.Panel panel1;
         private Wisej.Web.PictureBox pictureBox1;
         private Wisej.Web.Label label2;
-        private Wisej.Web.Label label1;
+        private Wisej.Web.Label lblWallet;
         private Wisej.Web.Panel panel2;
         private Wisej.Web.Label label3;
-        private Wisej.Web.Label label4;
+        private Wisej.Web.Label lblLoanAmount;
         private Wisej.Web.PictureBox pictureBox2;
         private Wisej.Web.Panel panel3;
         private Wisej.Web.PictureBox pictureBox3;
         private Wisej.Web.Label label5;
-        private Wisej.Web.Label label6;
+        private Wisej.Web.Label lblLoanBalance;
         private Wisej.Web.Panel panel4;
         private Wisej.Web.Panel panel5;
         private Wisej.Web.DataGridView dataGridView1;
         private Wisej.Web.Label label7;
+        private Wisej.Web.Button btnApply;
+        private Wisej.Web.Button btnPayNow;
+        private Wisej.Web.Button btnStatusIndicator;
     }
 }

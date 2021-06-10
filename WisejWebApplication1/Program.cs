@@ -7,7 +7,9 @@ using System.Web;
 using System.Web.Routing;
 using AFIT_Cooperative.Helper;
 using AFIT_Cooperative.Models;
-using WisejWebApplication1.Dashboard;
+using AFIT_Cooperative.Dashboard;
+using AFIT_Cooperative.Admin;
+using AFIT_Cooperative.Admin.Dashboard;
 
 namespace AFIT_Cooperative
 {
@@ -38,25 +40,57 @@ namespace AFIT_Cooperative
 
         static void Dashboard()
         {
-            Application.Browser.LocalStorage.GetValue("afit", (string token) =>
+            Application.Browser.LocalStorage.GetValue("AFIT_user", (string token) =>
             {
-                if (token == null)
+                if (token != null)
                 {
-                    MessageBox.Show("Unathorized user");
-                    Application.Navigate("/");
-                    return;
-                }
 
-                var member = JwtToken.DecodeToken(token);
-                if (member == null)
+                    var member = Auth.ValidateUser(JwtToken.DecodeToken(token));
+                    if (member == null)
+                    {
+                        Application.Navigate("/");
+                        return;
+                    }
+                    UserDashboard win = new UserDashboard(member);
+                    win.Show();
+                }
+                Application.Navigate("/");
+            });
+        }
+
+        static void Admin()
+        {
+            Application.Browser.LocalStorage.GetValue("AFIT_admin", (string token) =>
+            {
+                if (token != null)
                 {
-                    MessageBox.Show("Invalid user");
-                    Application.Navigate("/");
-                    return;
+                    var admin = Auth.ValidateAdmin(JwtToken.DecodeAdminToken(token));
+                    if (admin != null)
+                    {
+                        Application.Navigate("/Admin/Dashboard");
+                        return;
+                    }
                 }
+            });
+            AdminLogin window = new AdminLogin();
+            window.Show();
+        }
 
-                Dashboard win = new Dashboard(member);
-                win.Show();
+        static void AdminDashboard()
+        {
+            Application.Browser.LocalStorage.GetValue("AFIT_admin", (string token) =>
+            {
+                if (token != null)
+                {
+                    var admin = Auth.ValidateAdmin(JwtToken.DecodeAdminToken(token));
+                    if (admin != null)
+                    {
+                        AdminDashboard window = new AdminDashboard();
+                        window.Show();
+                        return;
+                    }
+                }
+                Application.Navigate("/Admin");
             });
         }
     }
