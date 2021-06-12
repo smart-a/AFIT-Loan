@@ -164,6 +164,12 @@
     <Compile Include="DefaultHeader.Designer.cs">
       <DependentUpon>DefaultHeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper\HelperMethods.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Loan.cs" />
@@ -181,11 +187,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="window1.cs">
+    <Compile Include="LandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window1.Designer.cs">
-      <DependentUpon>window1.cs</DependentUpon>
+    <Compile Include="LandingPage.Designer.cs">
+      <DependentUpon>LandingPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -287,12 +293,15 @@
     <EmbeddedResource Include="DefaultHeader.resx">
       <DependentUpon>DefaultHeader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window1.resx">
-      <DependentUpon>window1.cs</DependentUpon>
+    <EmbeddedResource Include="LandingPage.resx">
+      <DependentUpon>LandingPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registration\WinRegistration.resx">
       <DependentUpon>WinRegistration.cs</DependentUpon>

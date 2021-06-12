@@ -89,6 +89,11 @@ namespace AFIT_Cooperative.Dashboard
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
+            if (account.Loan == null || account.Loan.Balance == 0)
+            {
+                MessageBox.Show("No active loan");
+                return;
+            }
             PayLoan payLoan = new PayLoan(account);
             payLoan.ShowDialog();
             LoadPayHistory();
@@ -96,6 +101,14 @@ namespace AFIT_Cooperative.Dashboard
 
         private void btnApply_Click(object sender, EventArgs e)
         {
+            if (account.Loan != null && account.Loan.Status != -1)
+            {
+                if (account.Loan.Status == 1)
+                    MessageBox.Show("You have an active loan");
+                if (account.Loan.Status == 0)
+                    MessageBox.Show("Your loan request is still pending");
+                return;
+            }
             ApplyLoan applyLoan = new ApplyLoan(account);
             applyLoan.ShowDialog();
             LoadPayHistory();

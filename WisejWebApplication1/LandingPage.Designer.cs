@@ -1,7 +1,7 @@
 ﻿
 namespace AFIT_Cooperative
 {
-    partial class window1
+    partial class LandingPage
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace AFIT_Cooperative
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(window1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingPage));
             this.LandingPageCss = new Wisej.Web.StyleSheet(this.components);
             this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
             this.panel2 = new Wisej.Web.Panel();
@@ -52,7 +52,7 @@ namespace AFIT_Cooperative
             this.btnProceed = new Wisej.Web.Button();
             this.txtPassword = new Wisej.Web.TextBox();
             this.txtEmail = new Wisej.Web.TextBox();
-            this.defaultHeader1 = new DefaultHeader();
+            this.defaultHeader1 = new AFIT_Cooperative.DefaultHeader();
             this.flexLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -80,6 +80,7 @@ namespace AFIT_Cooperative
             this.flexLayoutPanel1.ShowCloseButton = false;
             this.flexLayoutPanel1.Size = new System.Drawing.Size(1292, 644);
             this.flexLayoutPanel1.TabIndex = 2;
+            this.flexLayoutPanel1.TabStop = true;
             // 
             // panel2
             // 
@@ -91,6 +92,7 @@ namespace AFIT_Cooperative
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(515, 558);
             this.panel2.TabIndex = 0;
+            this.panel2.TabStop = true;
             // 
             // panel4
             // 
@@ -100,6 +102,7 @@ namespace AFIT_Cooperative
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(436, 415);
             this.panel4.TabIndex = 1;
+            this.panel4.TabStop = true;
             // 
             // panel6
             // 
@@ -112,6 +115,7 @@ namespace AFIT_Cooperative
             this.panel6.ShowHeader = true;
             this.panel6.Size = new System.Drawing.Size(436, 206);
             this.panel6.TabIndex = 1;
+            this.panel6.TabStop = true;
             this.panel6.Text = "Cooperative\'s Insight";
             // 
             // label3
@@ -134,6 +138,7 @@ namespace AFIT_Cooperative
             this.panel5.ShowHeader = true;
             this.panel5.Size = new System.Drawing.Size(436, 209);
             this.panel5.TabIndex = 0;
+            this.panel5.TabStop = true;
             this.panel5.Text = "The Institution";
             // 
             // label2
@@ -154,7 +159,7 @@ namespace AFIT_Cooperative
             this.label1.Location = new System.Drawing.Point(37, 35);
             this.label1.Name = "label1";
             this.label1.Padding = new Wisej.Web.Padding(5, 8, 5, 2);
-            this.label1.Size = new System.Drawing.Size(451, 43);
+            this.label1.Size = new System.Drawing.Size(463, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to AFIT Cooperative Society Kaduna";
             // 
@@ -168,6 +173,7 @@ namespace AFIT_Cooperative
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(546, 558);
             this.panel3.TabIndex = 1;
+            this.panel3.TabStop = true;
             // 
             // panel7
             // 
@@ -182,6 +188,7 @@ namespace AFIT_Cooperative
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(471, 412);
             this.panel7.TabIndex = 0;
+            this.panel7.TabStop = true;
             // 
             // label4
             // 
@@ -211,6 +218,7 @@ namespace AFIT_Cooperative
             this.msgPanel.ShowCloseButton = false;
             this.msgPanel.Size = new System.Drawing.Size(320, 52);
             this.msgPanel.TabIndex = 4;
+            this.msgPanel.TabStop = true;
             this.msgPanel.Visible = false;
             // 
             // lblMsg
@@ -221,7 +229,7 @@ namespace AFIT_Cooperative
             this.lblMsg.ForeColor = System.Drawing.Color.FromArgb(153, 45, 36);
             this.lblMsg.Location = new System.Drawing.Point(13, 16);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(85, 19);
+            this.lblMsg.Size = new System.Drawing.Size(86, 19);
             this.lblMsg.TabIndex = 1;
             this.lblMsg.Text = "Some Error";
             // 
@@ -230,7 +238,7 @@ namespace AFIT_Cooperative
             this.btnMsgClose.BackColor = System.Drawing.Color.Transparent;
             this.btnMsgClose.BorderStyle = Wisej.Web.BorderStyle.None;
             this.btnMsgClose.Focusable = false;
-            this.btnMsgClose.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnMsgClose.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnMsgClose.ForeColor = System.Drawing.Color.FromArgb(153, 45, 36);
             this.btnMsgClose.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/times.svg";
             this.btnMsgClose.Location = new System.Drawing.Point(287, 8);
@@ -248,6 +256,7 @@ namespace AFIT_Cooperative
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(320, 45);
             this.panel1.TabIndex = 3;
+            this.panel1.TabStop = true;
             // 
             // linkLabel1
             // 
@@ -263,6 +272,7 @@ namespace AFIT_Cooperative
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.Text = "Forgot Password?";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel1.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // checkBox1
             // 
@@ -297,7 +307,6 @@ namespace AFIT_Cooperative
             this.txtPassword.CssStyle = "border-radius: 5px";
             this.txtPassword.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPassword.InputType.Type = Wisej.Web.TextBoxType.Password;
-            this.txtPassword.LabelText = null;
             this.txtPassword.Location = new System.Drawing.Point(81, 164);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Padding = new Wisej.Web.Padding(10);
@@ -311,7 +320,6 @@ namespace AFIT_Cooperative
             this.txtEmail.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
             this.txtEmail.CssStyle = "border-radius: 5px";
             this.txtEmail.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtEmail.LabelText = "";
             this.txtEmail.Location = new System.Drawing.Point(81, 100);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Padding = new Wisej.Web.Padding(10);

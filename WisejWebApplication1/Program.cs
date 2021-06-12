@@ -20,8 +20,21 @@ namespace AFIT_Cooperative
         /// </summary>
         static void Main()
         {
-            window1 window = new window1();
-            window.Show();
+            Application.Browser.LocalStorage.GetValue("AFIT_user", (string token) =>
+            {
+                if (token != null)
+                {
+                    var member = Auth.ValidateUser(JwtToken.DecodeToken(token));
+                    if (member != null)
+                    {
+                        Application.Navigate("/Dashboard");
+                        return;
+                    }
+                }
+                LandingPage window = new LandingPage();
+                window.Show();
+            });
+            
         }
 
         //
@@ -44,15 +57,13 @@ namespace AFIT_Cooperative
             {
                 if (token != null)
                 {
-
                     var member = Auth.ValidateUser(JwtToken.DecodeToken(token));
-                    if (member == null)
+                    if (member != null)
                     {
-                        Application.Navigate("/");
+                        UserDashboard win = new UserDashboard(member);
+                        win.Show();
                         return;
                     }
-                    UserDashboard win = new UserDashboard(member);
-                    win.Show();
                 }
                 Application.Navigate("/");
             });

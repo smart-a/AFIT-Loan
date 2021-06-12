@@ -145,6 +145,7 @@ namespace AFIT_Cooperative.Admin.Dashboard
             this.navLoanApplication.Icon = "resource.wx/Wisej.Ext.MaterialDesign/user-inside-bubble-speech.svg";
             this.navLoanApplication.Name = "navLoanApplication";
             this.navLoanApplication.Text = "Loan Applications";
+            this.navLoanApplication.Click += new System.EventHandler(this.navLoanApplication_Click);
             // 
             // navLoanHistory
             // 

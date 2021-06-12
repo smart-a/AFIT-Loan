@@ -68,16 +68,23 @@ namespace AFIT_Cooperative.Dashboard
                     Id = h.Id,
                     Fullname = h.Member.Fullname,
                     Amount = h.Amount.ToString("###,##0.00"),
-                    Date = h.PaidAt.ToString("dd MMM, yyyy")
+                    Date = h.PaidAt.ToString("ddd dd MMMM, yyyy")
                 }).ToList();
 
             dataGridView1.DataSource = histories;
             dataGridView1.Columns["Id"].Visible = false;
             dataGridView1.Columns["Fullname"].Visible = false;
+            dataGridView1.Columns["Amount"].Width = 200;
+            dataGridView1.Columns["Date"].Width = 200;
         }
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
+            if(account.Loan == null || account.Loan.Balance == 0)
+            {
+                MessageBox.Show("No active loan");
+                return;
+            }
             PayLoan payLoan = new PayLoan(account);
             payLoan.ShowDialog();
             LoadPayHistory();
@@ -85,6 +92,14 @@ namespace AFIT_Cooperative.Dashboard
 
         private void btnApply_Click(object sender, EventArgs e)
         {
+            if (account.Loan != null && account.Loan.Status != -1)
+            {
+                if(account.Loan.Status == 1)
+                    MessageBox.Show("You have an active loan");
+                if (account.Loan.Status == 0)
+                    MessageBox.Show("Your loan request is still pending");
+                return;
+            }
             ApplyLoan applyLoan = new ApplyLoan(account);
             applyLoan.ShowDialog();
             LoadPayHistory();

@@ -29,10 +29,10 @@ namespace AFIT_Cooperative.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle1 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle2 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle4 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle5 = new Wisej.Web.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MySavings));
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle3 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle6 = new Wisej.Web.DataGridViewCellStyle();
             this.panel1 = new Wisej.Web.Panel();
             this.btnFundWallet = new Wisej.Web.Button();
             this.pictureBox1 = new Wisej.Web.PictureBox();
@@ -54,6 +54,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             // panel1
             // 
+            this.panel1.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel1.Controls.Add(this.btnFundWallet);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -106,7 +107,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label2.Location = new System.Drawing.Point(76, 28);
+            this.label2.Location = new System.Drawing.Point(81, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 28);
             this.label2.TabIndex = 1;
@@ -116,13 +117,14 @@ namespace AFIT_Cooperative.Dashboard
             // panel5
             // 
             this.panel5.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel5.Controls.Add(this.btnRefresh);
             this.panel5.Controls.Add(this.dtpTo);
             this.panel5.Controls.Add(this.dtpFrom);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Location = new System.Drawing.Point(27, 150);
+            this.panel5.Location = new System.Drawing.Point(27, 144);
             this.panel5.Name = "panel5";
             this.panel5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel5.ResponsiveProfiles"))));
             this.panel5.Size = new System.Drawing.Size(747, 606);
@@ -189,22 +191,23 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.dataGridView1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Location = new System.Drawing.Point(22, 151);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataGridView1.ResponsiveProfiles"))));
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Size = new System.Drawing.Size(697, 428);
             this.dataGridView1.TabIndex = 0;
             // 
             // MySavings
             // 
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(244, 244, 244);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Name = "MySavings";

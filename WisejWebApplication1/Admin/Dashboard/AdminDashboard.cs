@@ -63,5 +63,11 @@ namespace AFIT_Cooperative.Admin.Dashboard
             PaymentsControl control = new PaymentsControl();
             NavigateMenu(control);
         }
+
+        private void navLoanApplication_Click(object sender, EventArgs e)
+        {
+            LoanApplications control = new LoanApplications();
+            NavigateMenu(control);
+        }
     }
 }

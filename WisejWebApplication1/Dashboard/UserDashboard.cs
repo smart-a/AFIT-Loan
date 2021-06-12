@@ -61,6 +61,17 @@ namespace AFIT_Cooperative.Dashboard
         {
             Index control = new Index(_member);
             NavigateMenu(control);
+
+            btnUser.MenuItems[0].Text = _member.Fullname;
+        }
+
+        private void btnUser_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+        {
+            if(e.Item.Name == "menuLogout")
+            {
+                Application.Browser.LocalStorage.RemoveValue("AFIT_user");
+                Application.Navigate("/");
+            }
         }
     }
 }

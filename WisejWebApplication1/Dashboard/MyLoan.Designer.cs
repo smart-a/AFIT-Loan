@@ -29,11 +29,12 @@ namespace AFIT_Cooperative.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle7 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle8 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle10 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle11 = new Wisej.Web.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyLoan));
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle9 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle12 = new Wisej.Web.DataGridViewCellStyle();
             this.panel1 = new Wisej.Web.Panel();
+            this.btnStatusIndicator = new Wisej.Web.Button();
             this.lblLoanBalance = new Wisej.Web.Label();
             this.label4 = new Wisej.Web.Label();
             this.pictureBox5 = new Wisej.Web.PictureBox();
@@ -46,7 +47,6 @@ namespace AFIT_Cooperative.Dashboard
             this.btnPayNow = new Wisej.Web.Button();
             this.label3 = new Wisej.Web.Label();
             this.dataGridView2 = new Wisej.Web.DataGridView();
-            this.btnStatusIndicator = new Wisej.Web.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +57,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             // panel1
             // 
+            this.panel1.Anchor = Wisej.Web.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel1.Controls.Add(this.btnStatusIndicator);
             this.panel1.Controls.Add(this.lblLoanBalance);
@@ -74,6 +75,25 @@ namespace AFIT_Cooperative.Dashboard
             this.panel1.Size = new System.Drawing.Size(747, 90);
             this.panel1.TabIndex = 1;
             this.panel1.TabStop = true;
+            // 
+            // btnStatusIndicator
+            // 
+            this.btnStatusIndicator.AutoSize = true;
+            this.btnStatusIndicator.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatusIndicator.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.btnStatusIndicator.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.btnStatusIndicator.Focusable = false;
+            this.btnStatusIndicator.Font = new System.Drawing.Font("default", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
+            this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
+            this.btnStatusIndicator.Location = new System.Drawing.Point(652, 6);
+            this.btnStatusIndicator.Name = "btnStatusIndicator";
+            this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
+            this.btnStatusIndicator.TabIndex = 14;
+            this.btnStatusIndicator.Text = "Active";
+            this.btnStatusIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatusIndicator.Visible = false;
             // 
             // lblLoanBalance
             // 
@@ -138,6 +158,7 @@ namespace AFIT_Cooperative.Dashboard
             // panel5
             // 
             this.panel5.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.panel5.Controls.Add(this.btnApply);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.btnPayNow);
@@ -182,9 +203,9 @@ namespace AFIT_Cooperative.Dashboard
             this.btnPayNow.Focusable = false;
             this.btnPayNow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPayNow.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/paypal.svg";
-            this.btnPayNow.Location = new System.Drawing.Point(616, 38);
+            this.btnPayNow.Location = new System.Drawing.Point(607, 38);
             this.btnPayNow.Name = "btnPayNow";
-            this.btnPayNow.Size = new System.Drawing.Size(102, 30);
+            this.btnPayNow.Size = new System.Drawing.Size(111, 30);
             this.btnPayNow.TabIndex = 6;
             this.btnPayNow.Text = "Pay Now";
             this.btnPayNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,40 +226,23 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.dataGridView2.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView2.Location = new System.Drawing.Point(21, 87);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataGridView2.ResponsiveProfiles"))));
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView2.Size = new System.Drawing.Size(697, 428);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // btnStatusIndicator
-            // 
-            this.btnStatusIndicator.AutoSize = true;
-            this.btnStatusIndicator.BackColor = System.Drawing.Color.Transparent;
-            this.btnStatusIndicator.BorderStyle = Wisej.Web.BorderStyle.None;
-            this.btnStatusIndicator.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
-            this.btnStatusIndicator.Focusable = false;
-            this.btnStatusIndicator.Font = new System.Drawing.Font("default", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
-            this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
-            this.btnStatusIndicator.Location = new System.Drawing.Point(654, 5);
-            this.btnStatusIndicator.Name = "btnStatusIndicator";
-            this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
-            this.btnStatusIndicator.TabIndex = 14;
-            this.btnStatusIndicator.Text = "Active";
-            this.btnStatusIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MyLoan
             // 
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(244, 244, 244);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Name = "MyLoan";

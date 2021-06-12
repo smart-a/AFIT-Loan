@@ -49,7 +49,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panelMain.Dock = Wisej.Web.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(70, 65);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1142, 793);
+            this.panelMain.Size = new System.Drawing.Size(731, 793);
             this.panelMain.TabIndex = 0;
             this.panelMain.TabStop = true;
             // 
@@ -61,7 +61,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panelTopBar.Dock = Wisej.Web.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(70, 0);
             this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(1142, 65);
+            this.panelTopBar.Size = new System.Drawing.Size(731, 65);
             this.panelTopBar.TabIndex = 1;
             this.panelTopBar.TabStop = true;
             // 
@@ -90,7 +90,7 @@ namespace AFIT_Cooperative.Dashboard
             this.btnUser.ForeColor = System.Drawing.Color.FromName("@buttonFace");
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/round-account-button-with-user-inside.svg";
-            this.btnUser.Location = new System.Drawing.Point(1031, 7);
+            this.btnUser.Location = new System.Drawing.Point(650, 7);
             this.btnUser.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuUser,
             this.menuLogout});
@@ -99,10 +99,12 @@ namespace AFIT_Cooperative.Dashboard
             this.btnUser.Size = new System.Drawing.Size(61, 52);
             this.btnUser.TabIndex = 1;
             this.btnUser.TextImageRelation = Wisej.Web.TextImageRelation.TextBeforeImage;
+            this.btnUser.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.btnUser_ItemClicked);
             // 
             // menuUser
             // 
             this.menuUser.AllowHtml = true;
+            this.menuUser.Enabled = false;
             this.menuUser.IconSource = "resource.wx/Wisej.Ext.FontAwesome/user.svg";
             this.menuUser.Index = 0;
             this.menuUser.Name = "menuUser";
@@ -165,7 +167,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 858);
+            this.ClientSize = new System.Drawing.Size(801, 858);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTopBar);
             this.Controls.Add(this.navigationBar1);

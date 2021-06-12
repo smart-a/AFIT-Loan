@@ -51,7 +51,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel1.Size = new System.Drawing.Size(315, 76);
             this.panel1.TabIndex = 18;
             this.panel1.TabStop = true;
-            this.panel1.Text = "Subscription";
+            this.panel1.Text = "Mode of payment";
             // 
             // cbPayMode
             // 
@@ -63,7 +63,7 @@ namespace AFIT_Cooperative.Dashboard
             this.cbPayMode.Name = "cbPayMode";
             this.cbPayMode.Size = new System.Drawing.Size(298, 42);
             this.cbPayMode.TabIndex = 9;
-            this.cbPayMode.Watermark = "Select Subscription";
+            this.cbPayMode.Watermark = "Select Mode of payment";
             this.cbPayMode.SelectedIndexChanged += new System.EventHandler(this.cbPayMode_SelectedIndexChanged);
             // 
             // txtAmount
@@ -105,7 +105,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panelOption.TabIndex = 22;
             this.panelOption.TabStop = true;
             // 
-            // PayLoad
+            // PayLoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
@@ -114,9 +114,9 @@ namespace AFIT_Cooperative.Dashboard
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "PayLoad";
+            this.Name = "PayLoan";
             this.StartPosition = Wisej.Web.FormStartPosition.CenterScreen;
-            this.Text = "Pay Load";
+            this.Text = "Pay Loan";
             this.Load += new System.EventHandler(this.PayLoad_Load);
             this.panel1.ResumeLayout(false);
             this.panelOption.ResumeLayout(false);

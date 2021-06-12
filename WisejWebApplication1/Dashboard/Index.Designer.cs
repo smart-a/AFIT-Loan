@@ -36,7 +36,7 @@ namespace AFIT_Cooperative.Dashboard
             this.btnPayNow = new Wisej.Web.Button();
             this.label7 = new Wisej.Web.Label();
             this.dataGridView1 = new Wisej.Web.DataGridView();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.panel6 = new Wisej.Web.Panel();
             this.panel1 = new Wisej.Web.Panel();
             this.pictureBox1 = new Wisej.Web.PictureBox();
             this.label2 = new Wisej.Web.Label();
@@ -54,7 +54,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,7 +68,7 @@ namespace AFIT_Cooperative.Dashboard
             this.flexLayoutPanel1.AutoScroll = true;
             this.flexLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(244, 244, 244);
             this.flexLayoutPanel1.Controls.Add(this.panel4);
-            this.flexLayoutPanel1.Controls.Add(this.flowLayoutPanel1);
+            this.flexLayoutPanel1.Controls.Add(this.panel6);
             this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
             this.flexLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
@@ -78,11 +78,12 @@ namespace AFIT_Cooperative.Dashboard
             // 
             // panel4
             // 
-            this.panel4.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.panel4.AutoScroll = true;
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(0, 211);
+            this.panel4.Dock = Wisej.Web.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 186);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1000, 577);
+            this.panel4.Size = new System.Drawing.Size(1000, 623);
             this.panel4.TabIndex = 1;
             this.panel4.TabStop = true;
             // 
@@ -129,9 +130,9 @@ namespace AFIT_Cooperative.Dashboard
             this.btnPayNow.Focusable = false;
             this.btnPayNow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPayNow.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/paypal.svg";
-            this.btnPayNow.Location = new System.Drawing.Point(686, 23);
+            this.btnPayNow.Location = new System.Drawing.Point(677, 23);
             this.btnPayNow.Name = "btnPayNow";
-            this.btnPayNow.Size = new System.Drawing.Size(102, 30);
+            this.btnPayNow.Size = new System.Drawing.Size(111, 30);
             this.btnPayNow.TabIndex = 9;
             this.btnPayNow.Text = "Pay Now";
             this.btnPayNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,9 +144,9 @@ namespace AFIT_Cooperative.Dashboard
             this.label7.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label7.Location = new System.Drawing.Point(26, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 23);
+            this.label7.Size = new System.Drawing.Size(160, 23);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Loan Histroy";
+            this.label7.Text = "Savings\' Histroy";
             // 
             // dataGridView1
             // 
@@ -154,19 +155,17 @@ namespace AFIT_Cooperative.Dashboard
             this.dataGridView1.Size = new System.Drawing.Size(762, 457);
             this.dataGridView1.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // panel6
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(80, 50, 80, 20);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1000, 211);
-            this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.TabStop = true;
+            this.panel6.Controls.Add(this.panel1);
+            this.panel6.Controls.Add(this.panel2);
+            this.panel6.Controls.Add(this.panel3);
+            this.panel6.Dock = Wisej.Web.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1000, 186);
+            this.panel6.TabIndex = 2;
+            this.panel6.TabStop = true;
             // 
             // panel1
             // 
@@ -177,7 +176,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel1.Controls.Add(this.lblWallet);
             this.panel1.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel1.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.panel1.Location = new System.Drawing.Point(83, 53);
+            this.panel1.Location = new System.Drawing.Point(83, 39);
             this.panel1.Margin = new Wisej.Web.Padding(3, 3, 20, 15);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new Wisej.Web.Padding(5);
@@ -224,7 +223,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel2.Controls.Add(this.lblLoanAmount);
             this.panel2.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel2.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.panel2.Location = new System.Drawing.Point(362, 53);
+            this.panel2.Location = new System.Drawing.Point(362, 39);
             this.panel2.Margin = new Wisej.Web.Padding(3, 3, 20, 15);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new Wisej.Web.Padding(5);
@@ -243,12 +242,13 @@ namespace AFIT_Cooperative.Dashboard
             this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
             this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
-            this.btnStatusIndicator.Location = new System.Drawing.Point(4, 92);
+            this.btnStatusIndicator.Location = new System.Drawing.Point(6, 90);
             this.btnStatusIndicator.Name = "btnStatusIndicator";
             this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
             this.btnStatusIndicator.TabIndex = 3;
             this.btnStatusIndicator.Text = "Active";
             this.btnStatusIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatusIndicator.Visible = false;
             // 
             // pictureBox2
             // 
@@ -288,7 +288,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel3.Controls.Add(this.lblLoanBalance);
             this.panel3.CssStyle = "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\nborder-radius: 4px";
             this.panel3.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.panel3.Location = new System.Drawing.Point(641, 53);
+            this.panel3.Location = new System.Drawing.Point(641, 39);
             this.panel3.Margin = new Wisej.Web.Padding(3, 3, 20, 15);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new Wisej.Web.Padding(5);
@@ -333,12 +333,11 @@ namespace AFIT_Cooperative.Dashboard
             this.Size = new System.Drawing.Size(1000, 809);
             this.Appear += new System.EventHandler(this.Index_Appear);
             this.flexLayoutPanel1.ResumeLayout(false);
-            this.flexLayoutPanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -352,7 +351,6 @@ namespace AFIT_Cooperative.Dashboard
 
         #endregion
         private Wisej.Web.FlexLayoutPanel flexLayoutPanel1;
-        private Wisej.Web.FlowLayoutPanel flowLayoutPanel1;
         private Wisej.Web.Panel panel1;
         private Wisej.Web.PictureBox pictureBox1;
         private Wisej.Web.Label label2;
@@ -372,5 +370,6 @@ namespace AFIT_Cooperative.Dashboard
         private Wisej.Web.Button btnApply;
         private Wisej.Web.Button btnPayNow;
         private Wisej.Web.Button btnStatusIndicator;
+        private Wisej.Web.Panel panel6;
     }
 }
