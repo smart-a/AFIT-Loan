@@ -29,10 +29,10 @@ namespace AFIT_Cooperative.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle10 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle11 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle7 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle8 = new Wisej.Web.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyLoan));
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle12 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle9 = new Wisej.Web.DataGridViewCellStyle();
             this.panel1 = new Wisej.Web.Panel();
             this.btnStatusIndicator = new Wisej.Web.Button();
             this.lblLoanBalance = new Wisej.Web.Label();
@@ -72,7 +72,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel1.Margin = new Wisej.Web.Padding(3, 3, 20, 15);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new Wisej.Web.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(747, 90);
+            this.panel1.Size = new System.Drawing.Size(747, 101);
             this.panel1.TabIndex = 1;
             this.panel1.TabStop = true;
             // 
@@ -83,11 +83,11 @@ namespace AFIT_Cooperative.Dashboard
             this.btnStatusIndicator.BorderStyle = Wisej.Web.BorderStyle.None;
             this.btnStatusIndicator.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
             this.btnStatusIndicator.Focusable = false;
-            this.btnStatusIndicator.Font = new System.Drawing.Font("default", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnStatusIndicator.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
             this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
-            this.btnStatusIndicator.Location = new System.Drawing.Point(652, 6);
+            this.btnStatusIndicator.Location = new System.Drawing.Point(6, 7);
             this.btnStatusIndicator.Name = "btnStatusIndicator";
             this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
             this.btnStatusIndicator.TabIndex = 14;
@@ -98,11 +98,11 @@ namespace AFIT_Cooperative.Dashboard
             // lblLoanBalance
             // 
             this.lblLoanBalance.AutoSize = true;
-            this.lblLoanBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoanBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLoanBalance.ForeColor = System.Drawing.Color.Green;
-            this.lblLoanBalance.Location = new System.Drawing.Point(590, 41);
+            this.lblLoanBalance.Location = new System.Drawing.Point(587, 57);
             this.lblLoanBalance.Name = "lblLoanBalance";
-            this.lblLoanBalance.Size = new System.Drawing.Size(59, 23);
+            this.lblLoanBalance.Size = new System.Drawing.Size(54, 21);
             this.lblLoanBalance.TabIndex = 11;
             this.lblLoanBalance.Text = "N0.00";
             // 
@@ -110,7 +110,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(478, 38);
+            this.label4.Location = new System.Drawing.Point(478, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 28);
             this.label4.TabIndex = 10;
@@ -121,7 +121,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.pictureBox5.ForeColor = System.Drawing.Color.Goldenrod;
             this.pictureBox5.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/briefcase.svg";
-            this.pictureBox5.Location = new System.Drawing.Point(423, 31);
+            this.pictureBox5.Location = new System.Drawing.Point(423, 47);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(49, 44);
             // 
@@ -129,18 +129,18 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.pictureBox1.ForeColor = System.Drawing.Color.Goldenrod;
             this.pictureBox1.ImageSource = "Resources\\piggy-bank-solid.svg";
-            this.pictureBox1.Location = new System.Drawing.Point(23, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 44);
             // 
             // lblLoanAmount
             // 
             this.lblLoanAmount.AutoSize = true;
-            this.lblLoanAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoanAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLoanAmount.ForeColor = System.Drawing.Color.Green;
-            this.lblLoanAmount.Location = new System.Drawing.Point(249, 45);
+            this.lblLoanAmount.Location = new System.Drawing.Point(238, 61);
             this.lblLoanAmount.Name = "lblLoanAmount";
-            this.lblLoanAmount.Size = new System.Drawing.Size(59, 23);
+            this.lblLoanAmount.Size = new System.Drawing.Size(54, 21);
             this.lblLoanAmount.TabIndex = 0;
             this.lblLoanAmount.Text = "N0.00";
             // 
@@ -148,7 +148,7 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label2.Location = new System.Drawing.Point(87, 41);
+            this.label2.Location = new System.Drawing.Point(78, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 28);
             this.label2.TabIndex = 1;
@@ -164,7 +164,7 @@ namespace AFIT_Cooperative.Dashboard
             this.panel5.Controls.Add(this.btnPayNow);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.dataGridView2);
-            this.panel5.Location = new System.Drawing.Point(27, 140);
+            this.panel5.Location = new System.Drawing.Point(27, 150);
             this.panel5.Name = "panel5";
             this.panel5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel5.ResponsiveProfiles"))));
             this.panel5.Size = new System.Drawing.Size(747, 553);
@@ -226,16 +226,16 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.dataGridView2.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView2.Location = new System.Drawing.Point(21, 87);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataGridView2.ResponsiveProfiles"))));
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView2.Size = new System.Drawing.Size(697, 428);
             this.dataGridView2.TabIndex = 0;
             // 

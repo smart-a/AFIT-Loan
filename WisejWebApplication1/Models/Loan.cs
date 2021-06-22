@@ -24,6 +24,7 @@ namespace AFIT_Cooperative.Models
     public class LoanDisplay
     {
         public Guid Id { set; get; }
+        public string StaffNumber { set; get; }
         public string Fullname { set; get; }
         public string Amount { set; get; }
         public string AmountPayable { set; get; }

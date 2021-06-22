@@ -62,14 +62,13 @@ namespace AFIT_Cooperative.Dashboard
             this.nudAmount.CssStyle = "border-radius: 3px";
             this.nudAmount.Location = new System.Drawing.Point(4, 3);
             this.nudAmount.Maximum = new decimal(new int[] {
-            99999,
-            0,
+            276447231,
+            23283,
             0,
             0});
             this.nudAmount.Name = "nudAmount";
             this.nudAmount.Size = new System.Drawing.Size(300, 42);
             this.nudAmount.TabIndex = 0;
-            this.nudAmount.ThousandsSeparator = true;
             this.nudAmount.KeyPress += new Wisej.Web.KeyPressEventHandler(this.nudAmount_KeyPress);
             // 
             // panel1

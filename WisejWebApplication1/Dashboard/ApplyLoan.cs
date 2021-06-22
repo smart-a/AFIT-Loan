@@ -30,7 +30,7 @@ namespace AFIT_Cooperative.Dashboard //LoanApplications
         {
             if (cbPayPeriod.Text != "" && nudAmount.Value > 0)
             {
-                var period = int.Parse(cbPayPeriod.Text);
+                var period = int.Parse(cbPayPeriod.Text.Replace(" months", ""));
                 var step = cbPayPeriod.SelectedIndex + 1;
                 var amountApply = double.Parse(nudAmount.Value.ToString());
 
@@ -53,15 +53,20 @@ namespace AFIT_Cooperative.Dashboard //LoanApplications
 
         private void btnApply_Click(object sender, EventArgs e)
         {
+            if (_account.Wallet == 0)
+            {
+                MessageBox.Show("Sorry!!! You cannot apply for loan when your wallet is Zero");
+                return;
+            }
+
             var maxApplication = _account.Wallet * 5;
             var amountApply = double.Parse(nudAmount.Value.ToString());
             var payable = double.Parse(txtAmountPayable.Text.Replace(",", ""));
-            var period = int.Parse(cbPayPeriod.Text);
+            var period = int.Parse(cbPayPeriod.Text.Replace(" months",""));
             var monthlyPay = payable / period;
             if (amountApply > maxApplication)
             {
-                MessageBox.Show("Sorry!!! You can only apply for 500% of your current savings\n" +
-                    $"Maximun of {maxApplication.ToString("N###,##0.00")}");
+                MessageBox.Show($"Sorry!!! You can only apply for Maximun of {maxApplication.ToString("N###,##0.00")}");
                 nudAmount.Focus();
                 return;
             }

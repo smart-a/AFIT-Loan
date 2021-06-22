@@ -22,8 +22,8 @@ namespace AFIT_Cooperative.Dashboard
         {
             cbPayMode.DataSource = new string[] { "Pay from Wallet", "Pay with card" };
             cbPayMode.Text = "";
-            txtAmount.Text = _account.Loan.AmountPayable.ToString();
-            btnSave.Text = $"Pay N{_account.Loan.AmountPayable.ToString("###,##0.00")}";
+            txtAmount.Text = _account.Loan.MonthlyPay.ToString();
+            btnSave.Text = $"Pay N{_account.Loan.MonthlyPay.ToString("###,##0.00")}";
         }
 
         private void MakePayment(double amount)
@@ -54,12 +54,12 @@ namespace AFIT_Cooperative.Dashboard
             {
                 panelOption.Enabled = true;
             }
-            else
+            else if(cbPayMode.SelectedIndex == 1)
             {
                 panelOption.Enabled = false;
                 FundWallet fund = new FundWallet();
                 fund.Text = "Pay Loan";
-                fund.nudAmount.Value = decimal.Parse(_account.Loan.AmountPayable.ToString());
+                fund.nudAmount.Value = decimal.Parse(_account.Loan.MonthlyPay.ToString());
                 fund.nudAmount.ReadOnly = true;
                 fund.ShowDialog();
 
@@ -79,6 +79,10 @@ namespace AFIT_Cooperative.Dashboard
                 MessageBox.Show("Insufficient wallet balance");
                 return;
             }
+            var account = _context.Accounts.SingleOrDefault((m) => m.Id == _account.Id);
+            account.Wallet -= amount;
+            _context.Entry(account).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges();
             MakePayment(amount);
         }
     }

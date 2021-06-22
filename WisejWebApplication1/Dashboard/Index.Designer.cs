@@ -188,14 +188,14 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.pictureBox1.ForeColor = System.Drawing.Color.Goldenrod;
             this.pictureBox1.ImageSource = "Resources\\wallet-solid.svg";
-            this.pictureBox1.Location = new System.Drawing.Point(166, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(166, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 54);
             // 
             // label2
             // 
             this.label2.AllowHtml = true;
-            this.label2.Location = new System.Drawing.Point(26, 11);
+            this.label2.Location = new System.Drawing.Point(26, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 57);
             this.label2.TabIndex = 1;
@@ -205,10 +205,10 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.lblWallet.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblWallet.ForeColor = System.Drawing.Color.Green;
-            this.lblWallet.Location = new System.Drawing.Point(104, 86);
+            this.lblWallet.Location = new System.Drawing.Point(26, 89);
             this.lblWallet.Name = "lblWallet";
             this.lblWallet.RightToLeft = Wisej.Web.RightToLeft.Yes;
-            this.lblWallet.Size = new System.Drawing.Size(130, 19);
+            this.lblWallet.Size = new System.Drawing.Size(208, 19);
             this.lblWallet.TabIndex = 0;
             this.lblWallet.Text = "N0.00";
             this.lblWallet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,13 +238,13 @@ namespace AFIT_Cooperative.Dashboard
             this.btnStatusIndicator.BorderStyle = Wisej.Web.BorderStyle.None;
             this.btnStatusIndicator.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
             this.btnStatusIndicator.Focusable = false;
-            this.btnStatusIndicator.Font = new System.Drawing.Font("default", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnStatusIndicator.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnStatusIndicator.ForeColor = System.Drawing.Color.Green;
             this.btnStatusIndicator.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
-            this.btnStatusIndicator.Location = new System.Drawing.Point(6, 90);
+            this.btnStatusIndicator.Location = new System.Drawing.Point(8, 7);
             this.btnStatusIndicator.Name = "btnStatusIndicator";
-            this.btnStatusIndicator.Size = new System.Drawing.Size(89, 27);
+            this.btnStatusIndicator.Size = new System.Drawing.Size(101, 27);
             this.btnStatusIndicator.TabIndex = 3;
             this.btnStatusIndicator.Text = "Active";
             this.btnStatusIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,14 +254,14 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.pictureBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.pictureBox2.ImageSource = "Resources\\piggy-bank-solid.svg";
-            this.pictureBox2.Location = new System.Drawing.Point(166, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(166, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 54);
             // 
             // label3
             // 
             this.label3.AllowHtml = true;
-            this.label3.Location = new System.Drawing.Point(26, 11);
+            this.label3.Location = new System.Drawing.Point(26, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 57);
             this.label3.TabIndex = 1;
@@ -271,10 +271,10 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.lblLoanAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLoanAmount.ForeColor = System.Drawing.Color.Green;
-            this.lblLoanAmount.Location = new System.Drawing.Point(127, 86);
+            this.lblLoanAmount.Location = new System.Drawing.Point(26, 89);
             this.lblLoanAmount.Name = "lblLoanAmount";
             this.lblLoanAmount.RightToLeft = Wisej.Web.RightToLeft.Yes;
-            this.lblLoanAmount.Size = new System.Drawing.Size(107, 19);
+            this.lblLoanAmount.Size = new System.Drawing.Size(208, 19);
             this.lblLoanAmount.TabIndex = 0;
             this.lblLoanAmount.Text = "N0.00";
             this.lblLoanAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -300,14 +300,14 @@ namespace AFIT_Cooperative.Dashboard
             // 
             this.pictureBox3.ForeColor = System.Drawing.Color.FromArgb(218, 165, 32);
             this.pictureBox3.ImageSource = "resource.wx/Wisej.Ext.ModernUI/appbar.money.svg";
-            this.pictureBox3.Location = new System.Drawing.Point(166, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(166, 27);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
             // 
             // label5
             // 
             this.label5.AllowHtml = true;
-            this.label5.Location = new System.Drawing.Point(26, 11);
+            this.label5.Location = new System.Drawing.Point(26, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 57);
             this.label5.TabIndex = 1;
@@ -318,10 +318,10 @@ namespace AFIT_Cooperative.Dashboard
             this.lblLoanBalance.Anchor = Wisej.Web.AnchorStyles.Top;
             this.lblLoanBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLoanBalance.ForeColor = System.Drawing.Color.Green;
-            this.lblLoanBalance.Location = new System.Drawing.Point(128, 86);
+            this.lblLoanBalance.Location = new System.Drawing.Point(26, 89);
             this.lblLoanBalance.Name = "lblLoanBalance";
             this.lblLoanBalance.RightToLeft = Wisej.Web.RightToLeft.Yes;
-            this.lblLoanBalance.Size = new System.Drawing.Size(106, 19);
+            this.lblLoanBalance.Size = new System.Drawing.Size(208, 19);
             this.lblLoanBalance.TabIndex = 0;
             this.lblLoanBalance.Text = "N0.00";
             this.lblLoanBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

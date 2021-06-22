@@ -26,19 +26,20 @@ namespace AFIT_Cooperative.Admin.Dashboard
                 new LoanDisplay
                 {
                     Id = h.Id,
+                    StaffNumber = h.Member.StaffNumber,
                     Fullname = h.Member.Fullname,
                     Amount = h.Amount.ToString("###,##0.00"),
                     AmountPayable = h.AmountPayable.ToString("###,##0.00"),
                     MonthlyPay = h.MonthlyPay.ToString("###,##0.00"),
                     Balance = h.Balance.ToString("###,##0.00"),
-                    Duration = $"{h.Duration}ms",
+                    Duration = $"{h.Duration} months",
                     Status = h.Status == 0 ? "Pending" : h.Status == 1 ? "Active" : "Declined",
                     Date = h.Date.Value.ToString("dd MMM, yyyy")
                 }).ToList();
 
             dataGridView1.DataSource = loanList;
             dataGridView1.Columns["Id"].Visible = false;
-            dataGridView1.Columns["Fullname"].Visible = false;
+            dataGridView1.Columns["Fullname"].Width = 200;
         }
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -48,7 +49,7 @@ namespace AFIT_Cooperative.Admin.Dashboard
             if (selectedLoan != null)
             {
                 LoanDetails loanDetails = new LoanDetails(selectedLoan);
-                loanDetails.ShowDialogAsync().Wait();
+                loanDetails.ShowDialog();
                 LoadApplications();
             }
         }

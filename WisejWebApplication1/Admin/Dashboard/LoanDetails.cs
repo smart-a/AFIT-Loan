@@ -31,23 +31,23 @@ namespace AFIT_Cooperative.Admin.Dashboard
 
         }
 
-        private void btnApprove_Click(object sender, EventArgs e)
+        private async void btnApprove_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Approve Loan Application",
                 buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                UpdateLoan(1).Wait();
+                await UpdateLoan(1);
             }
         }
 
-        private void btnDecline_Click(object sender, EventArgs e)
+        private async void btnDecline_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Decline Loan Application",
                buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                UpdateLoan(-1).Wait();
+              await  UpdateLoan(-1);
             }
         }
 
@@ -59,7 +59,7 @@ namespace AFIT_Cooperative.Admin.Dashboard
                 loan.Status = status;
                 _context.Entry(loan).State = System.Data.Entity.EntityState.Modified;
                 await _context.SaveChangesAsync();
-                MessageBox.Show("Loan application successful");
+                MessageBox.Show("Loan approved!");
                 this.Dispose();
             }
             catch (Exception ex)

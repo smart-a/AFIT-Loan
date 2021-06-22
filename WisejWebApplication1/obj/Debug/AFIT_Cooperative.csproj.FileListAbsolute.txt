@@ -136,7 +136,6 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bi
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Microsoft.IdentityModel.Tokens.dll
-C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Newtonsoft.Json.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Wisej.Framework.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Wisej.Web.Ext.Bubbles.dll
@@ -144,6 +143,7 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bi
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Wisej.Web.Ext.Notification.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\AFIT_Cooperative.dll.config
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\AFIT_Cooperative.pdb
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Newtonsoft.Json.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\EntityFramework.xml
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\EntityFramework.SqlServer.xml
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\bin\Microsoft.IdentityModel.JsonWebTokens.xml
@@ -176,11 +176,11 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\ob
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.DefaultHeader.resources
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.ForgetPassword.resources
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.Properties.Resources.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.LandingPage.resources
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.Registration.WinRegistration.resources
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.GenerateResource.cache
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.CoreCompileInputs.cache
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.CopyComplete
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.pdb
-C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.LandingPage.resources
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.AssemblyReference.cache

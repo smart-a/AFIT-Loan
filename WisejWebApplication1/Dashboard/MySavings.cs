@@ -89,20 +89,20 @@ namespace AFIT_Cooperative.Dashboard
         {
             try
             {
-                _context = new ApplicationDbContext();
                 FundWallet fundWallet = new FundWallet();
                 fundWallet.ShowDialog();
                 if (fundWallet.IsSuccess)
                 {
                     var amount = double.Parse(fundWallet.PaidAmount.ToString());
+                    account = _context.Accounts.SingleOrDefault((a) => a.Member.Id == currentMember.Id);
                     account.Wallet += amount;
                     _context.Entry(account).State = System.Data.Entity.EntityState.Modified;
                     _context.SaveChanges();
 
-
+                    var member = _context.Members.SingleOrDefault((a) => a.Id == currentMember.Id);
                     _context.PaymentHistories.Add(new PaymentHistory
                     {
-                        Member = currentMember,
+                        Member = member,
                         Amount = amount,
                         PaidAt = DateTime.Now
                     });
@@ -114,7 +114,7 @@ namespace AFIT_Cooperative.Dashboard
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show($"{ex.Message} - {ex.StackTrace}");
             }
         }
     }

@@ -50,17 +50,17 @@ namespace AFIT_Cooperative.Dashboard
                 if (currentLoan.Status == 1)
                 {
                     lblLoanBalance.Text = currentLoan.Balance.ToString("N###,##0.00");
-                    btnStatusIndicator.BackColor = Color.Green;
+                    btnStatusIndicator.ForeColor = Color.Green;
                     btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
                 }
                 else
                 {
                     lblLoanBalance.Text = "N0.00";
-                    btnStatusIndicator.BackColor = Color.Goldenrod;
+                    btnStatusIndicator.ForeColor = Color.Goldenrod;
                     btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/ban.svg";
                     if (currentLoan.Status < 0)
                     {
-                        btnStatusIndicator.BackColor = Color.Red;
+                        btnStatusIndicator.ForeColor = Color.Red;
                         btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/times-circle-o.svg";
                     }
                 }
@@ -77,7 +77,7 @@ namespace AFIT_Cooperative.Dashboard
                     AmountPayable = h.AmountPayable.ToString("###,##0.00"),
                     MonthlyPay = h.MonthlyPay.ToString("###,##0.00"),
                     Balance = h.Balance.ToString("###,##0.00"),
-                    Duration = $"{h.Duration}ms",
+                    Duration = $"{h.Duration} months",
                     Status = h.Status == 0 ? "Pending" : h.Status == 1 ? "Active" : "Declined",
                     Date = h.Date.Value.ToString("dd MMM, yyyy")
                 }).ToList();
@@ -89,7 +89,7 @@ namespace AFIT_Cooperative.Dashboard
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
-            if (account.Loan == null || account.Loan.Balance == 0)
+            if (account.Loan == null || account.Loan.Status < 1)
             {
                 MessageBox.Show("No active loan");
                 return;

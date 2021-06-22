@@ -28,7 +28,7 @@ namespace AFIT_Cooperative.Dashboard
         public void LoadPayHistory()
         {
             account = _context.Accounts.SingleOrDefault((a) => a.Member.Id == currentMember.Id);
-            lblLoanAmount.Text = account.Wallet.ToString("N###,##0.00");
+            lblWallet.Text = account.Wallet.ToString("N###,##0.00");
 
             btnStatusIndicator.Visible = false;
             lblLoanAmount.Text = "N0.00";
@@ -44,17 +44,17 @@ namespace AFIT_Cooperative.Dashboard
                 if (currentLoan.Status == 1)
                 {
                     lblLoanBalance.Text = currentLoan.Balance.ToString("N###,##0.00");
-                    btnStatusIndicator.BackColor = Color.Green;
+                    btnStatusIndicator.ForeColor = Color.Green;
                     btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/dot-circle-o.svg";
                 }
                 else
                 {
                     lblLoanBalance.Text = "N0.00";
-                    btnStatusIndicator.BackColor = Color.Goldenrod;
+                    btnStatusIndicator.ForeColor = Color.Goldenrod;
                     btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/ban.svg";
                     if (currentLoan.Status < 0)
                     {
-                        btnStatusIndicator.BackColor = Color.Red;
+                        btnStatusIndicator.ForeColor = Color.Red;
                         btnStatusIndicator.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/times-circle-o.svg";
                     }
                 }
@@ -80,7 +80,7 @@ namespace AFIT_Cooperative.Dashboard
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
-            if(account.Loan == null || account.Loan.Balance == 0)
+            if(account.Loan == null || account.Loan.Status < 1)
             {
                 MessageBox.Show("No active loan");
                 return;

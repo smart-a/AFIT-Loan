@@ -29,7 +29,7 @@ namespace AFIT_Cooperative.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            Wisej.Web.ComponentTool componentTool4 = new Wisej.Web.ComponentTool();
+            Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
             this.panel1 = new Wisej.Web.Panel();
             this.nudYear = new Wisej.Web.NumericUpDown();
             this.nudMonth = new Wisej.Web.NumericUpDown();
@@ -132,14 +132,13 @@ namespace AFIT_Cooperative.Dashboard
             this.nudAmount.CssStyle = "border-radius: 3px";
             this.nudAmount.Location = new System.Drawing.Point(5, 3);
             this.nudAmount.Maximum = new decimal(new int[] {
-            99999,
-            0,
+            276447231,
+            23283,
             0,
             0});
             this.nudAmount.Name = "nudAmount";
             this.nudAmount.Size = new System.Drawing.Size(325, 42);
             this.nudAmount.TabIndex = 0;
-            this.nudAmount.ThousandsSeparator = true;
             this.nudAmount.ValueChanged += new System.EventHandler(this.nudAmount_ValueChanged);
             // 
             // txtCVV
@@ -173,10 +172,10 @@ namespace AFIT_Cooperative.Dashboard
             this.txtCarcNumber.Size = new System.Drawing.Size(325, 68);
             this.txtCarcNumber.TabIndex = 32;
             this.txtCarcNumber.TextMaskFormat = Wisej.Web.MaskFormat.ExcludePromptAndLiterals;
-            componentTool4.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/credit-card.svg";
-            componentTool4.Position = Wisej.Web.LeftRightAlignment.Left;
+            componentTool1.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/credit-card.svg";
+            componentTool1.Position = Wisej.Web.LeftRightAlignment.Left;
             this.txtCarcNumber.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool4});
+            componentTool1});
             // 
             // btnPay
             // 
