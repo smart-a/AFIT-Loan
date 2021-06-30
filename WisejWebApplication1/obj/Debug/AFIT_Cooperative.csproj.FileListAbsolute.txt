@@ -183,4 +183,3 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\ob
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.CopyComplete
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.pdb
-C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\AFIT-Loan\WisejWebApplication1\obj\Debug\AFIT_Cooperative.csproj.AssemblyReference.cache

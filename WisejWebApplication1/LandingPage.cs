@@ -25,33 +25,44 @@ namespace AFIT_Cooperative
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
+            HandleLogin();
+        }
 
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                HandleLogin();
+            }
+        }
 
+        private void HandleLogin()
+        {
             try
             {
                 string pass = EncryptPass(txtPassword.Text);
                 var member = _context.Members.SingleOrDefault(
-                    (m) => (m.Email == txtEmail.Text || m.StaffNumber == txtEmail.Text) && m.Password == pass);
+                    (m) => m.Email == txtEmail.Text || m.StaffNumber == txtEmail.Text);
 
                 if (member != null)
                 {
-                    DisplayMsg("Login successful, redirecting to dashboard...", false);
-                    JwtToken.GenerateToken(member, (token) =>
-                     {
-                         Application.Browser.LocalStorage.SetValue("AFIT_user", token);
-                         Application.Navigate("/Dashboard");
-                     });
+                    if (member.Password == pass)
+                    {
+                        DisplayMsg("Login successful, redirecting to dashboard...", false);
+                        JwtToken.GenerateToken(member, (token) =>
+                        {
+                            Application.Browser.LocalStorage.SetValue("AFIT_user", token);
+                            Application.Navigate("/Dashboard");
+                        });
+                    }
+                    return;
                 }
-                else
-                {
-                    DisplayMsg("Account not found");
-                }
+                DisplayMsg("Account not found");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void DisplayMsg(string message, bool displayCloseButton = true)

@@ -314,6 +314,7 @@ namespace AFIT_Cooperative
             this.txtPassword.Size = new System.Drawing.Size(320, 41);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Watermark = "Enter Password";
+            this.txtPassword.KeyPress += new Wisej.Web.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtEmail
             // 
@@ -332,14 +333,14 @@ namespace AFIT_Cooperative
             this.defaultHeader1.Name = "defaultHeader1";
             this.defaultHeader1.TabIndex = 0;
             // 
-            // window1
+            // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1292, 644);
             this.Controls.Add(this.flexLayoutPanel1);
             this.FormBorderStyle = Wisej.Web.FormBorderStyle.None;
-            this.Name = "window1";
+            this.Name = "LandingPage";
             this.Text = "Window1";
             this.TopMost = true;
             this.WindowState = Wisej.Web.FormWindowState.Maximized;
