@@ -35,5 +35,5 @@
 //                             Custom settings are available using Application.Configuration.Settings.
 {
   "url": "Default.html",
-  "startup": "AFIT_Cooperative.Program.Registration, WisejWebApplication1"
+  "startup": "AFIT_Cooperative.Program.Registration, AFIT_Cooperative"
 }

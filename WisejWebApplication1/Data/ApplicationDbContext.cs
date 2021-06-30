@@ -24,7 +24,7 @@ namespace AFIT_Cooperative.Data
         }
 #else
         public ApplicationDbContext()
-           : base("Data Source=SQL5063.site4now.net;Initial Catalog=db_a75b55_childabuse;User Id=db_a75b55_childabuse_admin;Password=Horlarlekhan1#")
+           : base("Data Source=SQL5101.site4now.net;Initial Catalog=db_a76b62_afit;User Id=db_a76b62_afit_admin;Password=Horlarlekhan1#")
         {
             var ad = this.UsersAccounts.Count();
             if (ad < 1)

@@ -41,7 +41,7 @@ namespace AFIT_Cooperative.Admin.Dashboard
         {
             if (e.Item.Name == "menuLogout")
             {
-                Application.Browser.LocalStorage.RemoveValue("e_library_admin");
+                Application.Browser.LocalStorage.RemoveValue("AFIT_admin");
                 Application.Navigate("/Admin");
             }
         }

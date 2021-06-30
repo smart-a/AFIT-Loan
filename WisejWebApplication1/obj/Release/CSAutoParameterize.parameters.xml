@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="WisejWebApplication1.Properties.Settings.ConnectionSetting-Web.config Connection String" description="WisejWebApplication1.Properties.Settings.ConnectionSetting Connection String used in web.config by the application to access the database." defaultValue="Server=(localdb)\\mssqllocaldb;Database=afit;Trusted_Connection=True;MultipleActiveResultSets=true" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\HP\\Desktop\\Loan\\WinFormComponents\\WisejWebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WisejWebApplication1.Properties.Settings.ConnectionSetting']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\004SFT\\Desktop\\Adesoye\ Abeeb\\Projects\\AFIT-Loan\\WisejWebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WisejWebApplication1.Properties.Settings.ConnectionSetting']/@connectionString" />
   </parameter>
 </parameters>
